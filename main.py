@@ -5,7 +5,6 @@ from DieselMotor import DieselMotor
 if __name__ == "__main__":
     electricMotor = ElectroMotor()
     dieselMotor = DieselMotor()
-    notAMotor = NotAMotor()
 
     electricCar = Car(electricMotor)
     electricCar.drive()
