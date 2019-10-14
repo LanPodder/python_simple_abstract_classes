@@ -1,6 +1,7 @@
 from Car import Car
 from ElectroMotor import ElectroMotor
 from DieselMotor import DieselMotor
+from NotAMotor import NotAMotor
 
 if __name__ == "__main__":
     electricMotor = ElectroMotor()
@@ -12,3 +13,6 @@ if __name__ == "__main__":
 
     dieselCar = Car(dieselMotor)
     dieselCar.drive()
+
+    notWorkingcar = Car(notAMotor)
+    notWorkingcar.drive() #throws error
