@@ -1,6 +1,7 @@
 from Car import Car
 from ElectroMotor import ElectroMotor
 from DieselMotor import DieselMotor
+from TurboChargedGasolineMotor import TurboChargedGasolineMotor
 
 if __name__ == "__main__":
     electricMotor = ElectroMotor()
@@ -11,3 +12,10 @@ if __name__ == "__main__":
 
     dieselCar = Car(dieselMotor)
     dieselCar.drive()
+
+    turboChargedMotor = TurboChargedGasolineMotor()
+
+    gasolineCar = Car(turboChargedMotor)
+    gasolineCar.drive()
+
+    #turboChargedMotor.turbocharge() #works aswell, no type definition
